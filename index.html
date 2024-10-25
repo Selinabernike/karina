@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Karina!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Welcome to Karina's Birthday Adventure!</h1>
+        <p>Pass each level by picking the right gift to unlock a heartfelt message!</p>
+        <button id="start-game">Start Game</button>
+        <div id="game-area" style="display:none;">
+            <h2>Level 1: Choose the Right Gift</h2>
+            <div class="gifts">
+                <div class="gift" onclick="checkGift(this, 1)" data-correct="false">🎁</div>
+                <div class="gift" onclick="checkGift(this, 1)" data-correct="true">🎉</div>
+                <div class="gift" onclick="checkGift(this, 1)" data-correct="false">🎂</div>
+            </div>
+        </div>
+        <div id="message" style="display:none;">
+            <h1>Happy Birthday, Karina! 🎈</h1>
+            <p>Dear Karina,</p>
+            <p>As you celebrate another beautiful year, I hope you know how loved and cherished you are. May this year bring you closer to your dreams, and may happiness surround you at every step. Your presence lights up every room, and I'm grateful for every moment shared with you.</p>
+            <p>May today be filled with love, laughter, and memories that will last forever.</p>
+            <p>With all my heart,</p>
+            <p><strong>From Bernike ❤️</strong></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
